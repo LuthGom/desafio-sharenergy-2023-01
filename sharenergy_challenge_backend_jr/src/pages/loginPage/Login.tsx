@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from "../../components/button/Button";
 import Input from "../../components/input/Input";
 import { PasswordSVGIcon } from "../../components/usersvgicons/PasswordSVGIcon";
 import UserSVGIcon from "../../components/usersvgicons/UserSVGIcon";
 type Props = {};
 
 export default function Login({}: Props) {
+  const [showAndHide, setShowAndHide] = useState(false);
   return (
     <section
       style={{
@@ -24,13 +26,18 @@ export default function Login({}: Props) {
         placeholder="Digite seu username"
         svg={<UserSVGIcon />}
       />
+
       <Input
         id="password"
-        type="passowrd"
+        type={showAndHide ? "password" : "text"}
         name="password"
         label="Password"
         placeholder="Digite aqui a sua senha"
         svg={<PasswordSVGIcon />}
+        buttonName={showAndHide ? "Show" : "Hide"}
+        onClick={() =>
+          showAndHide === true ? setShowAndHide(false) : setShowAndHide(true)
+        }
       />
     </section>
   );
