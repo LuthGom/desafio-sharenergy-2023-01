@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from "../../components/button/Button";
-import Input from "../../components/input/Input";
-import { PasswordSVGIcon } from "../../components/usersvgicons/PasswordSVGIcon";
-import UserSVGIcon from "../../components/usersvgicons/UserSVGIcon";
+import Button from "../../components/Button/Button";
+import Input from "../../components/Input/Input";
+import { PasswordSVGIcon } from "../../components/UserSvgIcons/PasswordSVGIcon";
+import UserSVGIcon from "../../components/UserSvgIcons/UserSVGIcon";
 type Props = {};
 
 export default function Login({}: Props) {
@@ -10,8 +10,7 @@ export default function Login({}: Props) {
   return (
     <section
       style={{
-        height: "100%",
-        backgroundColor: "blue",
+        height: "calc(100% - 40px)",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
