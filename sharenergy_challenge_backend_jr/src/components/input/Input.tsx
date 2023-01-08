@@ -1,6 +1,6 @@
 import React from "react";
 import { InputContainer } from "../../styled-components/InputStyled";
-import Button from "../button/Button";
+import Button from "../Button/Button";
 interface Props {
   id: string;
   label: string;
