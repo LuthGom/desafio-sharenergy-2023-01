@@ -4,7 +4,7 @@ import "./App.css";
 import Login from "./pages/loginPage/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RandonUsersList from "./pages/RandonUsersLister/RandonUsersList";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import CadastroDeUsuarios from "./pages/CadastroDeUsuarios/CadastroDeUsuarios";
 import RandoomDogs from "./pages/RandomDogs/RandoomDogs";
 import CaHTTP from "./pages/CaHTTP/CaHTTP";
