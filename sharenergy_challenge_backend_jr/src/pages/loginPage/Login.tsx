@@ -10,7 +10,7 @@ export default function Login({}: Props) {
   return (
     <section
       style={{
-        height: "calc(100% - 40px)",
+        height: "calc(100% - 50px)",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
@@ -28,14 +28,14 @@ export default function Login({}: Props) {
 
       <Input
         id="password"
-        type={showAndHide ? "password" : "text"}
+        type={showAndHide ? "text" : "password"}
         name="password"
         label="Password"
         placeholder="Digite aqui a sua senha"
         svg={<PasswordSVGIcon />}
-        buttonName={showAndHide ? "Show" : "Hide"}
+        buttonName={showAndHide ? "Hide" : "Show"}
         onClick={() =>
-          showAndHide === true ? setShowAndHide(false) : setShowAndHide(true)
+          showAndHide === false ? setShowAndHide(true) : setShowAndHide(false)
         }
       />
     </section>
