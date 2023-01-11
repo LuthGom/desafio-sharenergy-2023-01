@@ -1,6 +1,6 @@
 import React from "react";
 import { LinkProps, Link } from "react-router-dom";
-import { NavButtonStyled } from "../../styled-components/NavButtonStyled";
+import { ButtonStyled } from "../../styled-components/ButtonStyled";
 
 type Props = {
   href: LinkProps["to"];
@@ -9,8 +9,8 @@ type Props = {
 
 export default function NavButton({ href, nome }: Props) {
   return (
-    <NavButtonStyled>
+    <ButtonStyled>
       <Link to={href}>{nome}</Link>
-    </NavButtonStyled>
+    </ButtonStyled>
   );
 }
