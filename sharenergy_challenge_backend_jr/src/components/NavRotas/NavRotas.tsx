@@ -16,7 +16,7 @@ export default function NavRotas({}: Props) {
           <NavButton nome="CaHTTP" href="/cahttp" />
         </li>
         <li>
-          <NavButton nome="Random Dogs" href="/radomdogs" />
+          <NavButton nome="Random Dogs" href="/randomdogs" />
         </li>
         <li>
           <NavButton nome="Cadastro de Usuários" href="/cadastrodeusuarios" />
