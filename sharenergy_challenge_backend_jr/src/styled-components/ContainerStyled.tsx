@@ -5,7 +5,7 @@ export const ContainerStyled = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 40px);
+  height: calc(90% - 40px);
   span {
     display: flex;
     width: 35%;
