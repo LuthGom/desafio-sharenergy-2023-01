@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RandonUsersList from "./pages/RandonUsersLister/RandonUsersList";
 import Header from "./components/Header/Header";
 import CadastroDeUsuarios from "./pages/CadastroDeUsuarios/CadastroDeUsuarios";
-import RandoomDogs from "./pages/RandomDogs/RandoomDogs";
+import RandomDogs from "./pages/RandomDogs/RandomDogs";
 import CaHTTP from "./pages/CaHTTP/CaHTTP";
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
 
           <Route element={<RandonUsersList />} path="/randonusers" />
           <Route element={<CadastroDeUsuarios />} path="/cadastrodeusuarios" />
-          <Route element={<RandoomDogs />} path="/randomdogs" />
+          <Route element={<RandomDogs />} path="/randomdogs" />
 
         </Routes>
       </Router>
