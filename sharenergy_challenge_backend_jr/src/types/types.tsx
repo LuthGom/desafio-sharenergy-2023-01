@@ -1,4 +1,6 @@
 export type Status = {
-    status: string;
-  };
-  
+  status: string;
+};
+export type Dogs = {
+  dog: string;
+};
