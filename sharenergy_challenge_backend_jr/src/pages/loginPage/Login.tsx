@@ -10,7 +10,7 @@ export default function Login({}: Props) {
   return (
     <section
       style={{
-        height: "calc(100% - 50px)",
+        height: "calc(100vh - 50px)",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
