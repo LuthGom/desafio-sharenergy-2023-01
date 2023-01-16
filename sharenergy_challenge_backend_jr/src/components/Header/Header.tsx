@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "../SideBar/SideBar";
 import { HeaderStyled } from "../../styled-components/HeaderStyled";
 import MenuSVGIcon from "../UserSvgIcons/MenuSVGIcon";
+import Button from "../Button/Button";
 
 type Props = {};
 
@@ -10,16 +11,17 @@ export default function Header({}: Props) {
 
   return (
     <HeaderStyled>
-      <button
+      <Button
+        type={""}
         onClick={(e) => {
           e.preventDefault();
           displayState === false
             ? setDisplayState(true)
             : setDisplayState(false);
         }}
-      >
-        <MenuSVGIcon />
-      </button>
+        nome={<MenuSVGIcon />}
+      />
+
       <Nav display={displayState !== false ? "flex" : "none"} />
     </HeaderStyled>
   );
