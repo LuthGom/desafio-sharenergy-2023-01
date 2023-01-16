@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const NavStyled = styled.nav`
-  height: 100vh;
+  height: calc(100vh - 10px);
   background-color: white;
   width: 250px;
   display: none;
+  z-index: 1;
   ol {
     display: flex;
     flex-direction: column;
@@ -18,6 +19,4 @@ export const NavStyled = styled.nav`
     list-style-position: inside;
     width: 100%;
   }
-
- 
 `;
