@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { random_dogs_uri } from "../../services/apis_urls";
 import { Dogs } from "../../types/types";
 import { ContainerStyled } from "../../styled-components/ContainerStyled";
+import Button from "../../components/Button/Button";
 type Props = {};
 const randomDogs: Dogs = {
   dog: "",
@@ -26,20 +27,18 @@ export default function RandomDogs({}: Props) {
       .catch((err) => console.log(err));
   };
 
-  const onChange = (prop: keyof Dogs, dogReturned: string) => {
-    setValue({ ...value, [prop]: dogReturned });
-  };
   return (
     <ContainerStyled>
-      <button
+      <Button
         onClick={(e) => {
           e.preventDefault();
           reqRandomDogs();
         }}
-      >
-        Refresh Image
-      </button>
-      <span>
+        nome="Refresh Image"
+        type="submit"
+      />
+
+      <span className="imgContainer">
         <img src={random_dogs_uri + dog} alt="" />
       </span>
     </ContainerStyled>
