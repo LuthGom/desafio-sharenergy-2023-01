@@ -1,6 +1,6 @@
 import React from "react";
 import { LinkProps, Link } from "react-router-dom";
-import { ButtonStyled } from "../../styled-components/ButtonStyled";
+import { ButtonStyled } from "../../styled-components/NavButtonStyled";
 
 type Props = {
   href: LinkProps["to"];
