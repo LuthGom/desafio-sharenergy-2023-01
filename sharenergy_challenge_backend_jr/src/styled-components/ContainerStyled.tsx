@@ -6,33 +6,18 @@ export const ContainerStyled = styled.form`
   justify-content: center;
   align-items: center;
   height: calc(90% - 40px);
-  span {
+
+  span,
+  span.imgContainer {
     display: flex;
-    width: 35%;
     align-items: center;
     justify-content: center;
   }
-  input {
-    margin: 10px;
-    padding: 10px;
+  span.imgContainer {
+    width: 35%;
   }
+
   img {
     width: 50%;
-  }
-  button {
-    background: transparent;
-    border: 2px groove yellowgreen;
-    border-radius: 200px;
-    color: whitesmoke;
-
-    font-size: 22px;
-    font-weight: bold;
-
-    margin: 10px;
-    padding: 10px;
-  }
-  button:hover {
-    background-color: orangered;
-    cursor: pointer;
   }
 `;
