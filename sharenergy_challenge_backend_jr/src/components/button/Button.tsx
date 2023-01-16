@@ -1,14 +1,16 @@
 import React, { MouseEvent } from "react";
 
+import { SubmitButtonStyled } from "../../styled-components/SubmitButtonStyled";
 type Props = {
-  nome: string;
+  nome: any;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
+  type: string;
 };
 
-export default function Button({ nome, onClick }: Props) {
+export default function Button({ nome, onClick, type }: Props) {
   return (
-    <button onClick={onClick}>
+    <SubmitButtonStyled itemType={type} onClick={onClick}>
       <span>{nome}</span>
-    </button>
+    </SubmitButtonStyled>
   );
 }
