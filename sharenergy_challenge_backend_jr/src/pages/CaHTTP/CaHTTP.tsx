@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { cats_http_uri } from "../../services/apis_urls";
-import InputSeach from "../../components/InputSearch/InputSeach";
+import InputSearch from "../../components/InputSearch/InputSearch";
 import { Status } from "../../types/types";
 import { ContainerStyled } from "../../styled-components/ContainerStyled";
+import Button from "../../components/Button/Button";
 
 const defaultStatus: Status = {
   status: "100",
@@ -22,24 +23,27 @@ export default function CaHTTP({}) {
   return (
     <ContainerStyled>
       <span>
-        <InputSeach
+        <InputSearch
           value={value.status}
           placeholder="Digite aqui o status HTTP desejado!"
           onChange={(event) => {
             onStatusChange("status", event.target.value);
           }}
         />
-        <button
+        <Button
           type="submit"
           onClick={(e) => {
             e.preventDefault();
             reqCatHttp(value.status);
           }}
-        >
-          Search
-        </button>
+          nome="Search"
+     />
+     
       </span>
+      <span className="imgContainer">
+
       <img src={cat} alt="" />
+      </span>
     </ContainerStyled>
   );
 }
