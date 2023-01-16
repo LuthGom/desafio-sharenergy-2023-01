@@ -1,4 +1,11 @@
 .App {
-    height: 100vh;
-    background-color: #00A2A2;
+    height: fit-content;
+   
+}
+
+/* Media query */
+@media (mix-width: 750px){
+    .App{
+        max-height: 150vh;
+    }
 }
