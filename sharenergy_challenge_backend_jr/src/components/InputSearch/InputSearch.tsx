@@ -1,14 +1,15 @@
-import React, { InputHTMLAttributes } from "react";
+import React from "react";
+import { InputSearchStyled } from "../../styled-components/InputSearchStyled";
 type Props = {
   value: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   placeholder: string;
 };
 
-export default function InputSeach({ value, onChange, placeholder }: Props) {
+export default function InputSearch({ value, onChange, placeholder }: Props) {
   return (
     <div>
-      <input
+      <InputSearchStyled
         type="text"
         defaultValue={value}
         onChange={onChange}
